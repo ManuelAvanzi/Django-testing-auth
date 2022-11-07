@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'forms_app',
-    'blog'
+    'blog',
+    'crispy_forms'
 ]
+CRISPY_TEMPLATE_PACK="bootstrap5"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -56,7 +58,7 @@ ROOT_URLCONF = 'django_lv3.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'forms_app/templates','blog/templates'],
+        'DIRS': [BASE_DIR / 'templates','forms_app/templates','blog/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
