@@ -56,7 +56,7 @@ ROOT_URLCONF = 'django_lv3.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'forms_app/templates'],
+        'DIRS': [BASE_DIR / 'forms_app/templates','blog/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
